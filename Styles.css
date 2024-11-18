@@ -1,0 +1,371 @@
+
+.size {
+    width: 500px;
+    margin:auto;
+}
+
+h1 {
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+
+p.main-text {
+    color:#ddd;
+}
+
+h2.highlight-text {
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+
+body.night li {
+    color:#ecf0f1;
+}
+
+body.night dt {
+    color:#ecf0f1;
+}
+
+body.night dd {
+    color:#ecf0f1;
+}
+
+body.day li {
+    color:#333;
+}
+
+body.day dt {
+    color:#333;
+}
+
+body.day dd {
+    color:#333;
+}
+
+body.night label {
+    color:#ecf0f1;
+}
+
+body.day label {
+    color:#333;
+}
+
+.shadowbox {
+    width: 15em;
+    border: 1px solid #333;
+    box-shadow: 8px 8px 5px #444;
+    padding: 8px 12px;
+    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+  }
+
+.main-img {
+    width: 400px; 
+    height: 250px; 
+    border: 2px solid #ccc; 
+    box-shadow: 4px 4px 8px rgba(128, 128, 128, 0.5); 
+    display: block;
+    text-align: right;  
+  }
+
+.nav-link {
+    text-align: center;
+   
+}
+
+a {
+    color:darkgoldenrod;
+}
+
+a.main-links {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:azure;
+    font-size: medium;
+}
+
+
+/* Popup form styling */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 2; /* Above the overlay */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    width: 300px;
+    text-align: center;
+}
+
+/* Close button for popup */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Background overlay */
+#overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Background fade effect */
+    z-index: 1; /* Below the popup */
+}
+
+.freeze-background {
+    overflow: hidden;
+}
+.accordion-content {
+    padding: 15px;
+    background-color:black;
+    display: none; /* Initially hide the content */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.accordion {
+    width: 60%;
+    margin: auto;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid whitesmoke ;
+}
+
+.accordion-header {
+    padding: 15px;
+    background-color:black;
+    cursor: pointer;
+    margin: 0;
+    font-size: 18px;
+    color:darkgoldenrod;
+}
+
+.accordion-header:hover {
+    background-color:#ddd;
+}
+
+.accordion-item:last-child .accordion-header {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.but {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#dateTimeDisplay {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color:white;
+}
+
+.star {
+    font-size: 30px;
+    cursor: pointer;
+    color: grey;
+}
+
+.star.selected {
+    color:gold;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Night Theme */
+body.night {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.theme-toggle-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Additional text styles for both themes */
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Day theme specific text styles */
+
+body.day p {
+    color: #555555; /* Light gray text for day */
+}
+
+/* Night theme specific text styles */
+
+body.night p {
+    color: #bdc3c7; /* Lighter gray text for night */
+}
+
+.time-container {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.show-time-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.show-time-btn:hover {
+    background-color: #2980b9;
+}
+
+.menu {
+    display: inline-block;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.menu-item {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.menu-item:focus {
+    outline: 2px solid #3498db;
+    background-color: #e8f4ff;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+label, input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+#success-message {
+    display: none;
+    color: green;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#error-message {
+    display: none;
+    color: red;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#greeting {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#themeSwithcer {
+    width: 60px;
+    height: 30px;
+    background-color: #3498db;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    margin: 20px;
+    transition: background-color 0.5s;
+}
+
+#toggleCircle {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 5px;
+    transition: left 0.5s;
+}
+
+.night #themeSwitcher {
+    background-color: #34495e;
+}
+
+.night #toggleCircle {
+    left: 30px;
+}
+
+.item {
+    display: none;
+}
+
+.item.visible {
+    display: block;
+}
